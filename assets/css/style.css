@@ -1,0 +1,54 @@
+html,
+body {
+  height: 99%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper > * {
+  padding: 2px;
+  width: 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  align-self: baseline;
+  background: lightgray;
+  align-content: center;
+}
+
+.main {
+  height: 80%;
+  text-align: center;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+}
+.area {
+  width: 400px;
+  height: 200px;
+  background: white;
+  align-self: center;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
