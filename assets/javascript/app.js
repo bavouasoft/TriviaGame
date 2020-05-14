@@ -146,9 +146,8 @@ publishResult = function () {
   return res;
 };
 
-// <div class="qst" id="">
-//      <div class="titleQst"></div>
-//      <div class="QstItem">
-//
-//      </div>
-// </div>
+<div class="qst" id="">
+  // <div class="titleQst"></div>
+  // <div class="QstItem">// // </div>
+  //{" "}
+</div>;
