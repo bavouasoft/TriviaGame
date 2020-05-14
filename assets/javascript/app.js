@@ -25,13 +25,13 @@ function stopSlide() {
   clearInterval(slide);
 }
 
-renderQuestion = function(question) {
+renderQuestion = function (question) {
   // $("#area")
   var content = generateQstHtml(question);
   $("#area").html(content);
 };
 
-generateQstHtml = function(question) {
+generateQstHtml = function (question) {
   // <div class="qst" id="">
   //      <div class="titleQst"></div>
   //      <div class="QstItem">
@@ -57,7 +57,7 @@ generateQstHtml = function(question) {
   return resp;
 };
 
-generateQstChoices = function(idQst, choices, ismult) {
+generateQstChoices = function (idQst, choices, ismult) {
   var allChoices = "";
 
   var choice;
@@ -76,7 +76,7 @@ generateQstChoices = function(idQst, choices, ismult) {
   return allChoices;
 };
 
-generateInputItem = function(idparent, ord, choiceTxt, is_rightresp, ismult) {
+generateInputItem = function (idparent, ord, choiceTxt, is_rightresp, ismult) {
   //<div>
   //    <input type="radio" id="dewey" name="drone" value="dewey">
   //        <label for="dewey">Dewey</label>
@@ -94,19 +94,19 @@ generateInputItem = function(idparent, ord, choiceTxt, is_rightresp, ismult) {
 
   var res = `
          <div>  
-         <input type=\"${type}\" id=\"${idparent +
-    "." +
-    ord}\" name=\"${idparent}\"  ok=\"${ok}\"  class = \"chk\" value=\"${idparent +
-    "." +
-    ord}\">       
+         <input type=\"${type}\" id=\"${
+    idparent + "." + ord
+  }\" name=\"${idparent}\"  ok=\"${ok}\"  class = \"chk\" value=\"${
+    idparent + "." + ord
+  }\">       
          <label for=\"${idparent + "." + ord}\">${choiceTxt}</label>  
          </div> 
          `;
   return res;
 };
 
-registerEvent = function() {
-  $(".chk").change(function() {
+registerEvent = function () {
+  $(".chk").change(function () {
     let who = $(this).prop("id");
     handleEvent(this);
     //let checked = $(this).prop('checked') ? 'checked' : 'unchecked';
@@ -114,7 +114,7 @@ registerEvent = function() {
   });
 };
 
-handleEvent = function(choice) {
+handleEvent = function (choice) {
   // console.log(component);
   let name = choice.name;
   let id = choice.id;
@@ -132,9 +132,9 @@ handleEvent = function(choice) {
   }
 };
 
-publishResult = function() {
+publishResult = function () {
   let countGoodAnswer = 0;
-  results.forEach(function(value, key) {
+  results.forEach(function (value, key) {
     console.log(key + " = " + value);
     if (value == true) {
       countGoodAnswer++;
@@ -145,3 +145,10 @@ publishResult = function() {
 
   return res;
 };
+
+// <div class="qst" id="">
+//      <div class="titleQst"></div>
+//      <div class="QstItem">
+//
+//      </div>
+// </div>
