@@ -109,7 +109,6 @@ registerEvent = function () {
   $(".chk").change(function () {
     let who = $(this).prop("id");
     handleEvent(this);
-    //let checked = $(this).prop('checked')
     //let checked = $(this).prop('checked') ? 'checked' : 'unchecked';
     //console.log(who + ' has been ' + checked);
   });
