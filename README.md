@@ -31,3 +31,9 @@ The application tracks the number of correct/incorrect answers. The user is show
 ## API:
 
 - SQL
+
+## Deployment
+
+This app is deployed on Github : https://bavouasoft.github.io/TriviaGame/
+
+Author: Achille Tsueti
