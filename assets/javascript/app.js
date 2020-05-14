@@ -145,14 +145,3 @@ publishResult = function () {
 
   return res;
 };
-
-{
-  /* <div class="qst" id=""> */
-}
-{
-  /* <div mode=""></div> */
-}
-{
-  /* <div mode="Qst">// // </div>{" "} */
-}
-// </div>;
