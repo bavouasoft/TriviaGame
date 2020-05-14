@@ -148,6 +148,5 @@ publishResult = function () {
 
 <div class="qst" id="">
   <div class="titleQst"></div>
-  <div class="QstItem">// // </div>
-  //{" "}
+  <div class="QstItem">// // </div>{" "}
 </div>;
