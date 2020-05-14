@@ -147,6 +147,6 @@ publishResult = function () {
 };
 
 <div class="qst" id="">
-  <div class="title"></div>
+  <div mode="title"></div>
   <div class="QstItem">// // </div>{" "}
 </div>;
